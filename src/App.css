@@ -1,10 +1,24 @@
-
 .App {
-    text-align: center;
-  }
+  text-align: center;
+}
 
-  img {
-    height: 100%;
-  }
+img {
+  height: 100%;
+  width: 100%;
+}
 
+.container {
+  display: flex;
+  max-width: 100%;
+}
 
+.item {
+  flex: 1;
+  margin: 20px;
+}
+
+/*   display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+ */
+/* not aligned in mobile , there is no margin space in mobile */
