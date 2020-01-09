@@ -9,12 +9,17 @@ img {
 
 .container {
   display: flex;
-  max-width: 100%;
+  flex-wrap: wrap;
 }
 
 .item {
-  flex: 1;
-  margin: 20px;
+  width: 100vw;
+}
+
+@media screen and (min-width: 600px) {
+  .item {
+    flex: 1;
+  }
 }
 
 /*   display: grid;
