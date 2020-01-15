@@ -12,27 +12,36 @@ function App() {
   return (
     <div className="App">
       <h1>Welcome to my Movie App</h1>
-      {/* <img alt="movie_poster" src={moviePoster} />  */}
+
       <div className="container">
-        <div className="item">
+        <div className="item ">
           <img alt="movie_poster" src={deathNote} />
+          <div className="overlay"> death note</div>
         </div>
-        <div className="item">
+
+        <div className="item ">
           <img alt="movie_poster" src={breakingBad} />
+          <div className="overlay"> breakingBad</div>
         </div>
-        <div className="item">
+
+        <div className="item ">
           <img alt="movie_poster" src={gameOfThrones} />
+          <div className="overlay"> gameOfThrones</div>
         </div>
       </div>
+
       <div className="container">
-        <div className="item">
+        <div className="item ">
           <img alt="movie_poster" src={theMist} />
+          <div className="overlay"> theMist</div>
         </div>
-        <div className="item">
+        <div className="item ">
           <img alt="movie_poster" src={theWalkingDead} />
+          <div className="overlay"> theWalkingDead</div>
         </div>
-        <div className="item">
+        <div className="item ">
           <img alt="movie_poster" src={theWire} />
+          <div className="overlay"> theWire</div>
         </div>
       </div>
     </div>
@@ -40,4 +49,3 @@ function App() {
 }
 
 export default App;
-

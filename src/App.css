@@ -14,6 +14,24 @@ img {
 
 .item {
   width: 100vw;
+  padding: 30px;
+}
+
+.item:hover {
+  width: 100vw;
+}
+
+.item:hover .overlay {
+  display: block;
+  position: relative;
+  height: 100px;
+  top: -100px;
+}
+
+.overlay {
+  position: absolute;
+  background-color: darkcyan;
+  display: none;
 }
 
 @media screen and (min-width: 600px) {
@@ -22,7 +40,8 @@ img {
   }
 }
 
-/*   display: grid;
+/*   using grid
+display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px;
  */
