@@ -14,8 +14,7 @@ export default function Gallery() {
         <Movies name="DeathNote" logo={deathNote} id="deathNote"></Movies>
         <Movies name="breakingBad" logo={breakingBad} id="breakingBad"></Movies>
         <Movies name="gameOfThrones" logo={gameOfThrones} id="gameOfThrones"></Movies>
-      </div>
-      <div className="container">
+     
         <Movies name="theMist" logo={theMist} id="theMist"></Movies>
         <Movies name="theWalkingDead" logo={theWalkingDead} id="theWalkingDead"></Movies>
         <Movies name="theWire" logo={theWire} id="theWire"></Movies>

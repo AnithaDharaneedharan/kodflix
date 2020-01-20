@@ -12,11 +12,19 @@ img {
   flex-wrap: wrap;
 }
 
-.item {
+@media screen and (min-width: 600px) {
+  .container {
+    flex-wrap: nowrap;
+  }
+}
 
-  padding: 10px;
+.item {
+  position: relative;
   flex: 1;
- 
+  min-width: 400px;
+
+  padding: 0 5px;
+  overflow: hidden;
 }
 
 .item:hover {
@@ -25,15 +33,16 @@ img {
 
 .item:hover .overlay {
   display: block;
-  position: relative;
-  height: 100px;
-  top: -100px;
+  bottom: 0px;
 }
 
 .overlay {
   position: absolute;
   background-color: darkcyan;
-  display: none;
+  width: 100%;
+  height: 100px;
+  bottom: -100px;
+  transition: bottom 1s;
 }
 
 @media screen and (min-width: 600px) {
