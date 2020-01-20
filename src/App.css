@@ -13,8 +13,10 @@ img {
 }
 
 .item {
-  width: 100vw;
-  padding: 30px;
+
+  padding: 10px;
+  flex: 1;
+ 
 }
 
 .item:hover {
