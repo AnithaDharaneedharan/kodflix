@@ -8,27 +8,17 @@ img {
 }
 
 .container {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-@media screen and (min-width: 600px) {
-  .container {
-    flex-wrap: nowrap;
-  }
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
 .item {
   position: relative;
-  flex: 1;
+
   min-width: 400px;
 
-  padding: 0 5px;
+  margin: 0 5px;
   overflow: hidden;
-}
-
-.item:hover {
-  width: 100vw;
 }
 
 .item:hover .overlay {
@@ -44,16 +34,3 @@ img {
   bottom: -100px;
   transition: bottom 1s;
 }
-
-@media screen and (min-width: 600px) {
-  .item {
-    flex: 1;
-  }
-}
-
-/*   using grid
-display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10px;
- */
-/* not aligned in mobile , there is no margin space in mobile */
