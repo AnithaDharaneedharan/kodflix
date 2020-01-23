@@ -1,43 +1,21 @@
 import React from "react";
-import deathNote from "./images/death-note.jpg";
-import breakingBad from "./images/breaking-bad.jpg";
-import gameOfThrones from "./images/game-of-thrones.jpg";
-import theMist from "./images/the-mist.jpg";
-import theWalkingDead from "./images/the-walking-dead.jpg";
-import theWire from "./images/the-wire.jpg";
-
 import "./App.css";
+import Gallery from "./Gallery";
+import { BrowserRouter, Route } from "react-router-dom";
+import Details from "./Details";
 
 function App() {
   return (
     <div className="App">
       <h1>Welcome to my Movie App</h1>
-      {/* <img alt="movie_poster" src={moviePoster} />  */}
-      <div className="container">
-        <div className="item">
-          <img alt="movie_poster" src={deathNote} />
-        </div>
-        <div className="item">
-          <img alt="movie_poster" src={breakingBad} />
-        </div>
-        <div className="item">
-          <img alt="movie_poster" src={gameOfThrones} />
-        </div>
-      </div>
-      <div className="container">
-        <div className="item">
-          <img alt="movie_poster" src={theMist} />
-        </div>
-        <div className="item">
-          <img alt="movie_poster" src={theWalkingDead} />
-        </div>
-        <div className="item">
-          <img alt="movie_poster" src={theWire} />
-        </div>
-      </div>
+
+      <BrowserRouter>
+        <Route exact path="/" component={Gallery}></Route>
+        <Route exact path="/:details" component={Details}>
+        </Route>
+      </BrowserRouter>
     </div>
   );
 }
 
 export default App;
-
