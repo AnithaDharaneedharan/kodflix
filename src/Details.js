@@ -11,7 +11,7 @@ export default class Details extends React.Component {
   }
 
   componentDidMount = () => {
-    // setTimeout( function () { return this.setState({message: "Coming soon! :)"})} , 3000)
+    //setTimeout( function () { return this.setState({message: "Coming soon! :)"})} , 3000)
     setTimeout(() => {
       this.setState({ message: "Coming soon! :)" });
     }, 3000);
@@ -20,7 +20,7 @@ export default class Details extends React.Component {
   render() {
     return (
       <div>
-        <div>{this.state.message}</div>
+        <h2>{this.state.message}</h2>
         <Link to="/">Back to homepage</Link>
       </div>
     );
