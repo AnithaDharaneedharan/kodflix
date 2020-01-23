@@ -11,8 +11,7 @@ function App() {
 
       <BrowserRouter>
         <Route exact path="/" component={Gallery}></Route>
-        <Route exact path="/:details">
-          <Details></Details>
+        <Route exact path="/:details" component={Details}>
         </Route>
       </BrowserRouter>
     </div>
