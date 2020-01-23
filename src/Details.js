@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import getGallery from "./get-gallery";
 
 export default class Details extends React.Component {
   constructor() {
@@ -17,10 +18,17 @@ export default class Details extends React.Component {
     }, 3000);
   };
 
+  getMovieTitle = () => {
+   
+     return getGallery().find(cover => cover.id === this.props.match.params.details).title ;
+  
+  };
+
   render() {
     return (
       <div>
-        <h2>{this.state.message}</h2>
+        <div>{this.state.message}</div>
+        <h1>{this.getMovieTitle()}</h1>
         <Link to="/">Back to homepage</Link>
       </div>
     );
