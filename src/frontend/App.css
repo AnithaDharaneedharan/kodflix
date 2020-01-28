@@ -34,3 +34,27 @@ img {
   bottom: -100px;
   transition: bottom 1s;
 }
+
+.details {
+  background-color: gray;
+}
+
+.movie-container {
+  padding: 100px 0;
+  display: block;
+}
+
+@media screen and (min-width: 600px) {
+  .movie-container {
+    display: flex;
+  }
+  .synopsis {
+    flex: 1;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+
+  .cover {
+    flex: 1;
+  }
+}
