@@ -18,7 +18,7 @@ export default class Details extends React.Component {
       this.setState({ message: "Coming soon! :)" });
     }, 3000);
 
-    let show = getGallery().find(
+    let show = getGallery.find(
       cover => cover.id === this.props.match.params.details
     );
 

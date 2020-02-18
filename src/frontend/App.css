@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+
 }
 
 img {
@@ -58,3 +59,42 @@ img {
     flex: 1;
   }
 }
+
+input {
+  width: 300px;
+  height: 50px;
+  background-color: darkgray;
+  margin-bottom: 50px;
+  margin-right: 50px;
+}
+
+.search {
+  background-color: red;
+  height: 50px;
+  width: 300px;
+}
+
+.my-button {
+  background-color: white;
+  padding:10px;
+  margin: 10px;
+}
+
+.topic {
+  display: block;
+  
+}
+
+.cursive {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: darkgray
+}
+
+.left {
+  text-align: left;
+  font-size: larger;
+  font-weight: bold;
+  list-style: square outside none;
+  font-style: italic;
+}
+

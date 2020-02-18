@@ -6,14 +6,16 @@ export default class Gallery extends React.Component {
   componentDidMount() {
     fetch("/rest/shows")
       .then(response => response.json())
-      .then(data => console.log("here is: ", data));
+      .then(data => {
+        console.log("here is: ", data);
+      });
   }
 
   render() {
     return (
       <div>
         <div className="container">
-          {getGallery().map(cover => {
+          {getGallery.map(cover => {
             return (
               <Movies
                 key={cover.id}
