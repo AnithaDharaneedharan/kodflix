@@ -12,20 +12,25 @@ export default function BestPractices() {
           <li>Not having unit tests and 100% coverage</li>
           <li>Dont Touch the DOM</li>
           <li>Inefficient project file structure</li>
+          <li>Avoid the Monolitic approach POWER OF REACT IS COMPONENTS</li>
+          <li>rcc,imrc from ES7 PLUGIN - Import snippet library</li>
+
+          <li>Dont Repeat Yourself</li>
           <li>Template literals</li>
-          <li>Incorrect proptypes</li>
-          <li>Avoid the Monolitic approach </li>
+          <li>Different proptypes eg: Number</li>
+          
           <li>Adjacent JSX elements must be wrapped</li>
           <li>class instead of className</li>
           <li>Dont Touch the DOM</li>
           <li>export default</li>
+          <li>e.prevent.default</li>
           <li>
             Not using the right lifecycle method--EVERYTIME SETSTATE is called ,
             rendered so many times
           </li>
           <li>Infinite loop if you dont pass into the arrow fn / bind it</li>
           <li>Not keeping up with upgrades</li>
-          <li>rcc,imrc from ES7 PLUGIN - Import snippet library</li>
+          
           <li>Async await instead of promises</li>
           <li>
             Component doesnt contain an export when import {} and default{" "}
@@ -46,10 +51,14 @@ export default function BestPractices() {
             destructuring and short hand
           </li>
           <li>Use Default values</li>
+          <li>Missing keys props</li>
+          <li>
+            Use pascal case while defining react component and File name should
+            be same as component name
+          </li>
         </ul>
       </div>
       <Link to="/dry">DRY</Link>
-     
     </>
   );
 }

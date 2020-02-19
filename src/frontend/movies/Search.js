@@ -6,18 +6,19 @@ export default class Search extends React.Component {
     super();
     this.state = {
       searchValue: "",
-      getMovieNames: ""
+      getMovieNames: "",
+      data: ""
     };
   }
 
   componentDidMount() {
     fetch("/rest/shows")
       .then(response => response.json())
-      .then(data => this.setState({ data }));
+      .then(data => this.setState({ data: data }));
   }
 
   searchMovie(placeholder) {
-    let getMovieNames = this.state.data.shows.find(
+    const getMovieNames = this.state.data.shows.find(
       movie => movie.title === placeholder
     );
 
@@ -33,22 +34,23 @@ export default class Search extends React.Component {
   }
 
   render() {
+    let {getMovieNames, searchValue} = this.state;
     return (
       <div>
         <input
           type="text"
           placeholder="Search by movie name"
           id="searchValue"
-          value={this.state.value}
+          value={searchValue}
           onChange={event => this.change(event.target.value)}
         />
         <button
           className="search"
-          onClick={() => this.searchMovie(this.state.searchValue)}
+          onClick={() => this.searchMovie(searchValue)}
         >
           Search
         </button>
-        <p>The movie name you searched for is {this.state.getMovieNames}</p>
+        <p>The movie name you searched for is {getMovieNames}</p>
       </div>
     );
   }

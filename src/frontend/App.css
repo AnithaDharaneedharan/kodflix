@@ -74,16 +74,18 @@ input {
   width: 300px;
 }
 
-.my-button {
+.button-primary {
   background-color: white;
   padding:10px;
   margin: 10px;
 }
 
-.topic {
-  display: block;
-  
+.button-secondary {
+  background-color: purple;
+  padding:10px;
+  margin: 10px;
 }
+
 
 .cursive {
   font-family: Georgia, 'Times New Roman', Times, serif;
