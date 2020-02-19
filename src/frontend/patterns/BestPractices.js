@@ -51,7 +51,7 @@ export default function BestPractices() {
             destructuring and short hand
           </li>
           <li>Use Default values</li>
-          <li>Missing keys props</li>
+          <li>Missing keys props gallery</li>
           <li>
             Use pascal case while defining react component and File name should
             be same as component name
