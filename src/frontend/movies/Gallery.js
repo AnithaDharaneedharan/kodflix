@@ -1,31 +1,39 @@
 import React from "react";
 import Movies from "./Movies.js";
-import getGallery from "./get-gallery";
+
 
 export default class Gallery extends React.Component {
+
+  constructor() {
+    super();
+    this.state = { shows: []};
+  }
   componentDidMount() {
-    fetch("/rest/shows")
+    fetch('/rest/shows')
       .then(response => response.json())
-      .then(data => {
-        console.log("here is: ", data);
+      .then(shows => {
+      
+        this.setState({ shows: shows.shows });
       });
   }
 
   render() {
+  
     return (
-      <div>
-        <div className="container">
-          {getGallery.map(cover => {
+   
+        <div className="container"> {
+          this.state.shows.map(show => {
             return (
-              <Movies
-                name={cover.title}
-                logo={cover.image}
-                id={cover.id}
-              />
+              <Movies key={show.id} id={show.id} title={show.title} />
             );
-          })}
+          })
+        }
         </div>
-      </div>
+        
+   
     );
   }
 }
+
+
+

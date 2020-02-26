@@ -1,9 +1,9 @@
-import deathNote from "../images/death-note.jpg";
-import breakingBad from "../images/breaking-bad.jpg";
-import gameOfThrones from "../images/game-of-thrones.jpg";
-import theMist from "../images/the-mist.jpg";
-import theWalkingDead from "../images/the-walking-dead.jpg";
-import theWire from "../images/the-wire.jpg";
+import deathNote from "../images/deathNote.jpg";
+import breakingBad from "../images/breakingBad.jpg";
+import gameOfThrones from "../images/gameOfThrones.jpg";
+import theMist from "../images/theMist.jpg";
+import theWalkingDead from "../images/theWalkingDead.jpg";
+import theWire from "../images/theWire.jpg";
 
 let getGallery =
    [

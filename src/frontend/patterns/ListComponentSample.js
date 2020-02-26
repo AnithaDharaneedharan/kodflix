@@ -20,7 +20,7 @@ export default class ListComponentSample extends React.Component {
           className="button-secondary"
         />
 
-        <ListItemComponentSample title={123} click={this.click} />
+        <ListItemComponentSample title="Create" click={this.click} />
 
         <ListItemComponentSample title="Update" click={this.click} />
 
