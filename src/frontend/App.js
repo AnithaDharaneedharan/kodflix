@@ -18,7 +18,7 @@ function App() {
           <Route exact path="/patterns" component={BestPractices}></Route>
           <Route exact path="/dry" component={ListComponentSample}></Route>
           <Route exact path="/not-found" component={NotFound}></Route>
-          <Route exact path="/:details" component={Details}></Route>
+          <Route exact path="/:showId" component={Details}></Route>
         </Switch>
       </BrowserRouter>
     </div>
