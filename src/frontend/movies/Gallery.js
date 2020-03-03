@@ -18,6 +18,7 @@ export default class Gallery extends React.Component {
           {getGallery.map(cover => {
             return (
               <Movies
+                key={cover.id}
                 name={cover.title}
                 logo={cover.image}
                 id={cover.id}

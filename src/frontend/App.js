@@ -5,7 +5,6 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Details from "./movies/Details";
 import NotFound from "./movies/NotFound";
 import Landing from "./movies/Landing";
-import ListComponent from './patterns/ListComponent';
 import ListComponentSample from "./patterns/ListComponentSample";
 
 function App() {
