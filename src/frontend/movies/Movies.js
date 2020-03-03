@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function Movies(props) {
+export default function Movies(props) {
   return (
     <div className="item ">
       <Link to={`/${props.id}`}>
@@ -12,4 +12,4 @@ function Movies(props) {
   );
 }
 
-export default Movies;
+

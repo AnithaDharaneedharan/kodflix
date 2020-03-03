@@ -5,7 +5,8 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Details from "./movies/Details";
 import NotFound from "./movies/NotFound";
 import Landing from "./movies/Landing";
-import ListComponentSample from "./patterns/ListComponentSample";
+// import ListComponent from './patterns/ListComponent';
+// import ListComponentSample from "./patterns/ListComponentSample";
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Landing}></Route>
           <Route exact path="/patterns" component={BestPractices}></Route>
-          <Route exact path="/dry" component={ListComponentSample}></Route>
+          {/* <Route exact path="/dry" component={ListComponentSample}></Route> */}
           <Route exact path="/not-found" component={NotFound}></Route>
           <Route exact path="/:showId" component={Details}></Route>
         </Switch>

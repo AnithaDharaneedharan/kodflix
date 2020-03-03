@@ -8,7 +8,7 @@ export default class Gallery extends React.Component {
     this.state = {shows: []}
   }
   componentDidMount() {
-    fetch("/rest/shows")
+    fetch('/rest/shows')
       .then(response => response.json())
       .then(shows => {
        this.setState({shows: shows.shows})
@@ -16,6 +16,7 @@ export default class Gallery extends React.Component {
   }
 
   render() {
+  
     return (
       <div>
         <div className="container">
@@ -28,9 +29,14 @@ export default class Gallery extends React.Component {
                 id={cover.id}
               />
             );
-          })}
+          })
+        }
         </div>
-      </div>
+        </div>
+   
     );
   }
 }
+
+
+
